@@ -40,7 +40,7 @@ export default function SignIn() {
 
         <TouchableOpacity
           style={styles.button}
-          onPress={() => console.log("Tela Home")}
+          onPress={() => navigation.navigate("Home")}
         >
           <Text style={styles.buttonText}>Acessar</Text>
         </TouchableOpacity>
