@@ -20,6 +20,7 @@ import Header from "@/src/components/Header";
 import Movements from "@/src/components/Movements";
 import { Account } from "@/src/types";
 import Balance from "@/src/components/Balance";
+import Actions from "@/src/components/Actions";
 
 const list = [
   {
@@ -133,7 +134,7 @@ export default function Home() {
 
       <Balance entradas={sumOfCredits} gastos={sumOfDebits} />
 
-      {/* <Actions /> */}
+      <Actions />
 
       <ScrollView
         style={styles.scrollArea}
