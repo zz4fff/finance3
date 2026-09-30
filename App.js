@@ -4,11 +4,14 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import Routes from "./src/routes";
 
+// TODO: Set database connections here
+
 export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <Routes />
+        {/* <Routes /> */}
+        { session && session.user ? <Home session={session} /> : <Auth /> }
       </NavigationContainer>
     </View>
   );
